@@ -74,6 +74,50 @@ a:hover {
   text-decoration: none;
 }
 
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: #1772d0;
+  border: 1px solid rgba(23, 114, 208, 0.28);
+  border-radius: 50%;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #f09228;
+  border-color: rgba(240, 146, 40, 0.5);
+  background-color: rgba(240, 146, 40, 0.08);
+  transform: translateY(-1px);
+}
+
+.social-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.social-icon:nth-child(3) svg,
+.social-icon:nth-child(4) svg {
+  fill: currentColor;
+  stroke: none;
+}
+
 body,
 td,
 th,
@@ -100,6 +144,14 @@ h2 {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
+}
+
+.publication-title {
+  display: inline-block;
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 2px;
 }
 
 .name {
